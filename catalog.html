@@ -9,7 +9,19 @@
 
 <body>
 
-    <header>Каталог турів ЛАСТОЧКА</header>
+    <header>
+        <div class="wrapper">
+            <div class="toggle">
+                <input class="toggle-input" type="checkbox" />
+                <div class="toggle-bg"></div>
+                <div class="toggle-switch">
+                    <div class="toggle-switch-figure"></div>
+                    <div class="toggle-switch-figureAlt"></div>
+                </div>
+            </div>
+        </div>
+        Каталог турів ЛАСТОЧКА
+    </header>
 
     <div class="container">
         <div class="card">
@@ -51,7 +63,7 @@
             <p>Досліджуйте культуру та традиції. 3 дні / 2 ночі.</p>
             <span class="button" onclick='addToCart({name:"Японія", price:9999})'>Додати до корзини</span>
         </div>
-           <div class="card">
+        <div class="card">
             <img src="images/turciya.jpg">
             <h3>Туречина</h3>
             <p>Відпочинок на узбережжі Середземного моря. 9 дні / 8 ночі.</p>
@@ -62,7 +74,10 @@
 
 
     <div class="cart">
-        <h4>Корзина</h4>
+        <div>
+            <h4>Корзина</h4>
+            <button onclick="buyItems()" class="cart-buy-btn">Купити</button>
+        </div>
         <div id="cart-items"></div>
     </div>
 
