@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог турів - ЛАСТОЧКА</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>Каталог турів ЛАСТОЧКА</header>
+
+    <div class="container">
+        <div class="card">
+            <img src="images/Paris.jpg" alt="Париж">
+            <h3>Париж</h3>
+            <p>Романтична подорож до міста кохання. 5 днів / 4 ночі.</p>
+            <span class="button" onclick='addToCart({name:"Париж", price:15000})'>Додати до корзини</span>
+        </div>
+
+        <div class="card">
+            <img src="images/london.png" alt="Лондон">
+            <h3>Лондон</h3>
+            <p>Класичний тур по культурним пам'яткам. 4 дні / 3 ночі.</p>
+            <span class="button" onclick='addToCart({name:"Лондон", price:12000})'>Додати до корзини</span>
+        </div>
+
+        <div class="card">
+            <img src="images/Rome.jpg" alt="Рим">
+            <h3>Рим</h3>
+            <p>Історичний тур до серця Італії. 6 днів / 5 ночей.</p>
+            <span class="button" onclick='addToCart({name:"Рим", price:18000})'>Додати до корзини</span>
+        </div>
+
+        <div class="card">
+            <img src="images/odesa.jpg">
+            <h3>Одеса</h3>
+            <p>Одеса мама. 5 дні / 4 ночі.</p>
+            <span class="button" onclick='addToCart({name:"Одеса", price:2800})'>Додати до корзини</span>
+        </div>
+        <div class="card">
+            <img src="images/mld.jpg">
+            <h3>Мальдіви</h3>
+            <p>Райський відпочинок на білосніжних пляжах. 8 днів / 7 ночей.</p>
+            <span class="button" onclick='addToCart({name:"Мальдіви", price:19999})'>Додати до корзини</span>
+        </div>
+        <div class="card">
+            <img src="images/japan.jpg">
+            <h3>Японія</h3>
+            <p>Досліджуйте культуру та традиції. 3 дні / 2 ночі.</p>
+            <span class="button" onclick='addToCart({name:"Японія", price:9999})'>Додати до корзини</span>
+        </div>
+           <div class="card">
+            <img src="images/turciya.jpg">
+            <h3>Туречина</h3>
+            <p>Відпочинок на узбережжі Середземного моря. 9 дні / 8 ночі.</p>
+            <span class="button" onclick='addToCart({name:"Туречина", price:14999})'>Додати до корзини</span>
+        </div>
+    </div>
+
+
+
+    <div class="cart">
+        <h4>Корзина</h4>
+        <div id="cart-items"></div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
